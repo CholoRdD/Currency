@@ -37,7 +37,7 @@
 	</div>
 </div> -->
 
-<div class=" border-2 border-green-900 w-[750px] h-56 rounded-3xl hover:border-green-600 flex flex-row">
+<div class=" border-2 border-green-900 w-[750px] h-56 rounded-3xl hover:border-green-600 flex flex-row overflow-hidden">
 <CurrencyList />
 <div class="bg-transparent border-b-2 h-12 w-[494px] border-green-700 text-white flex items-center justify-center text-xl">
 RAWR
