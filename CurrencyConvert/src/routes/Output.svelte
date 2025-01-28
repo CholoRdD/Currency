@@ -1,5 +1,19 @@
-<div class="w-[48vw] h-[70vh] flex justify-center items-center text-white text-7xl font-bold flex-col gap-8 bg-transparent border-2 border-green-900 rounded-2xl">
-    <p>USD</p>
-    <p>↓</p>
-    <p>PHP</p>
+<script>
+	let { from, to, amount, exchange, hide } = $props();
+
+</script>
+
+<div
+	class="flex h-[70vh] w-[48vw] flex-col items-center justify-center gap-8 rounded-2xl border-2 border-green-900 bg-transparent text-7xl font-bold text-white overflow-hidden"
+>
+	<div class="{hide ? 'flex flex-row' : 'hidden'} gap-5 border-2 border-green-800 px-4 pt-1 pb-4 rounded-2xl">
+        <p>{amount}</p>
+		<p class="text-5xl flex justify-center items-end font-mono">{from}</p>
+	</div>
+	<p class="{hide ? 'flex flex-row' : 'hidden'}">↓</p>
+	<div class="{hide ? 'flex flex-row' : 'hidden'} gap-5">
+        <p>{exchange}</p>
+		<p class="text-5xl flex justify-center items-end font-mono">{to}</p>
+	</div>
+    <p class="{hide ? 'hidden' : 'flex flex-row'} text-4xl justify-center items-center text-center font-thin"> PLEASE INPUT AMOUNT AND CURRENCIES TO BE CONVERTED</p>
 </div>
