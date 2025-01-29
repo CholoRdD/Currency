@@ -53,7 +53,8 @@
 							type="text"
 							bind:value={valueInput}
 							placeholder="Enter amount to be converted"
-							class="h-16 w-[320px] rounded-2xl border-2 border-green-900 bg-transparent text-xl text-green-500 focus:border-green-500"
+							class="h-16 w-[320px] rounded-2xl border-2 border-green-900 bg-transparent text-xl text-green-500 focus:border-green-500 hover:border-green-500"
+							on:keydown={(e) => e.key === `Enter` && Convert()}
 						/>
 						<button
 							class="flex w-[75px] items-center justify-center rounded-2xl border-2 border-green-900 text-3xl hover:border-green-600 hover:bg-green-900"
