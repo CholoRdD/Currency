@@ -24,10 +24,10 @@
 	}
 </script>
 
-<div class="flex flex-row gap-5">
+<div class="flex flex-row md:gap-5 gap-2">
 	<div class="group">
 		<div
-			class="flex flex-col h-12 w-48 flex-wrap items-center justify-center gap-1 group-hover:border-green-500
+			class="flex flex-col h-12 md:w-48 w-[35vw] flex-wrap items-center justify-center gap-1 group-hover:border-green-500
 	overflow-scroll overflow-x-hidden rounded-t-2xl border-2 border-green-900 bg-transparent text-xl font-bold text-white"
 		>
 			FROM
@@ -37,10 +37,10 @@
 			type="text"
 			bind:value={searchFrom}
 			placeholder="Search Currency"
-			class="w-48 border-2 border-green-900 bg-transparent p-2 text-white text-center group-hover:border-green-500"
+			class="md:w-48 w-[35vw] border-2 border-green-900 bg-transparent p-2 text-white text-center group-hover:border-green-500"
 		/>
 		<div
-			class="flex h-[250px] w-48 flex-wrap items-center justify-center gap-1 group-hover:border-green-500
+			class="flex md:h-[250px] h-[25vh] md:w-48 w-[35vw] flex-wrap items-center justify-center gap-1 group-hover:border-green-500
         overflow-scroll overflow-x-hidden rounded-b-2xl border-2 border-green-900 bg-transparent text-white"
 		>
 			{#each filterFrom as code}
@@ -56,7 +56,7 @@
 
 	<div class="group">
 		<p
-			class="flex h-12 w-48 flex-wrap items-center justify-center gap-1 group-hover:border-green-500
+			class="flex h-12 md:w-48 w-[35vw] flex-wrap items-center justify-center gap-1 group-hover:border-green-500
 	overflow-scroll overflow-x-hidden rounded-t-2xl border-2 border-green-900 bg-transparent text-xl font-bold text-white"
 		>
 			TO
@@ -66,10 +66,10 @@
 			type="text"
 			bind:value={searchTo}
 			placeholder="Search Currency"
-			class="w-48 border-2 border-green-900 bg-transparent p-2 text-white text-center group-hover:border-green-500"
+			class="md:w-48 w-[35vw] border-2 border-green-900 bg-transparent p-2 text-white text-center group-hover:border-green-500"
 		/>
 		<div
-			class="flex h-[250px] w-48 flex-wrap items-center justify-center gap-1 group-hover:border-green-500
+			class="flex md:h-[250px] h-[25vh] md:w-48 w-[35vw] flex-wrap items-center justify-center gap-1 group-hover:border-green-500
         overflow-scroll overflow-x-hidden rounded-b-2xl border-2 border-green-900 bg-transparent text-white"
 		>
 			{#each filterTo as code}
