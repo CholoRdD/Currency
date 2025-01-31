@@ -1,3 +1,5 @@
+<!-- Output.svelte -->
+
 <script>
 	let { from, to, amount, exchange, hide } = $props();
 </script>

@@ -1,3 +1,5 @@
+<!-- CurrencyList.svelte -->
+
 <script>
 	import { currency } from './CurrencyArray.js';
 

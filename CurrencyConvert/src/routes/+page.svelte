@@ -1,3 +1,5 @@
+<!-- +page.svelte -->
+
 <script>
 	import CurrencyList from './CurrencyList.svelte';
 	import Header from './Header.svelte';
